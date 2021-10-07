@@ -1,0 +1,45 @@
+.hot{
+    padding: 120px 0;
+    background: #F9F9F9;
+    &__title{
+        margin-bottom: 45px;
+    }
+    &__carousel{
+        &-quatinity{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 33px;
+            color: #2EC821;
+            text-align: right;
+        }
+        &-img{
+            max-width: 100%;
+            width: 100%;
+            object-fit: cover;
+            height: 176px;
+            margin-bottom: 30px;
+        }
+        &-p{
+            font-size: 14px;
+            line-height: 27px;
+            color: #B4B4B4;            
+        }
+        &-title{
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 120%;
+            color: #101011;
+            margin-bottom: 12px;
+        }
+        &-desc{
+            font-size: 16px;
+            line-height: 120%;
+            color: #838387;
+            margin-bottom: 16px;
+        }
+    }
+    &__item{
+        background: #fff;
+        padding: 30px 20px;
+    }
+}
