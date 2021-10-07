@@ -1,0 +1,49 @@
+.footer {
+    background: #E9EFFD;
+    padding: 120px 0;
+    &__logo{
+        margin-bottom:  40px;
+    }
+    &__p{
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #838387;
+        margin-top: 50px;
+    }
+    &__subp{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #838387;
+        opacity: 0.5;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 40px;
+    }
+    &__col{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    &__title{
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 34px;
+        color: #101011;
+    }
+    &__link{
+        font-weight: normal;
+        font-size: 16px;
+        line-height:120%;
+        color: #838387;
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+}
