@@ -1,9 +1,6 @@
 .intro{
     margin-top: 20px;
     margin-bottom: 50px;
-    &__body{
-        // overflow: hidden;
-    }
     &__item{
         display: flex;
         align-items: center;
@@ -23,7 +20,8 @@
         margin-bottom: 50px;    
     }
     &__img{
-        max-width: 50%;
+        max-width: 40%;
         width: 100%;
+        margin-left: 15px;
     }
 }
