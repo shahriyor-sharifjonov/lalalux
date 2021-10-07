@@ -12,6 +12,12 @@
     &__item{
         width: calc(25% - 20px);
         margin-bottom: 40px;
+        @include media(992){
+            width: calc(50% - 10px);
+        } 
+        @include media($md){
+            width: 100%;
+        }  
         img{
             max-width: 100%;
             width: 100%;

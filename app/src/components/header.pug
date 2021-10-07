@@ -20,15 +20,32 @@ mixin header()
                 a(href="#!").header__row-item
                     img(src="images/user.svg", alt="")
                     p Войти
+            button.header__button 
+                span.header__button-line
     .header__cat.container 
-        button(type="button").header__cat-btn 
-            img(src="images/lines.svg", alt="")
-            p Каталог
+        //- button(type="button").header__cat-btn 
+        //-     img(src="images/lines.svg", alt="")
+        //-     p Каталог
+           
         a(href="#!").header__cat-link О компании
         a(href="#!").header__cat-link Калькулятор
         a(href="#!").header__cat-link Бренды
         a(href="#!").header__cat-link Доставка
         a(href="#!").header__cat-link Услуги
         a(href="#!").header__cat-link Контакты
+
+        .show-on-mob 
+            .header__tel.tel 
+                a(href="tel:+79254288288").tel__header 
+                    img(src="images/tel.svg", alt="tel").tel__header-icon
+                    p.tel__header-link  +7 925 428 8288
+                a(href="tel:+79254288288").tel__link Заказать звонок 
+            .header__row
+                a(href="#!").header__row-item
+                    img(src="images/user.svg", alt="")
+                    p Войти
+                a(href="#!").header__row-item
+                    img(src="images/cart.svg", alt="")
+                    p Корзина
 
     

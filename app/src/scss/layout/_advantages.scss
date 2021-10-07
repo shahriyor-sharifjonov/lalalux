@@ -8,6 +8,12 @@
     justify-content: space-between;
     align-items: stretch;
     padding: 40px;
+    @include media(1200){
+        flex-wrap: wrap;
+    }
+    @include media($md){
+        padding: 40px 15px;
+    }
     &__item{
         background: #FFFFFF;
         border-radius: 7px;
@@ -15,18 +21,52 @@
         flex-direction: column;
         padding: 40px;
         width: 25%;
+        @include media(1200){
+            width: calc(50% - 10px);
+            flex-direction: row;
+            align-items: center;
+        }
+        @include media(768){
+            width: 100%;
+            padding: 20px;
+        }
+        &:nth-of-type(1){
+            @include media(1200){
+                margin-bottom: 20px;
+            }
+        }
+        &:nth-of-type(2){
+            @include media(1200){
+                margin-bottom: 20px;
+            }
+        }
         &:not(:last-child){
             margin-right: 10px;
+            @include media(1200){
+                margin-right: 0;
+            }
+            @include media($md){
+                margin-bottom: 20px;
+            }
         }
         &-img{
             width: 90px;
             height: 90px;
             margin-bottom: 2px;
+            @include media(1200){
+                margin-right: 15px;
+                width: 50px;
+                height: 50px;
+            }
         }
         &-p{
             font-size: 22px;
             line-height: 33px;
             color: #838387;
+            @include media(992){
+                font-size: 16px;
+                line-height: 120%;
+            }
         }
     }
 }

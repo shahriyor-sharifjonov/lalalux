@@ -1,10 +1,17 @@
 .intro{
     margin-top: 20px;
     margin-bottom: 50px;
+    @include media(1200){
+        margin-top: 155px;
+    }
     &__item{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include media(992){
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__title{
         font-size: 60px;
@@ -12,16 +19,38 @@
         text-transform: uppercase;
         color: #101011;
         margin-bottom: 24px;
+        @include media(1200){
+            font-size: 45px;
+        }
+        @include media($md){
+            font-size: 24px;
+        }
     }
     &__desc{
         font-size: 24px;
         line-height: 120%;
         color: #838387;
         margin-bottom: 50px;    
+        @include media(1200){
+            font-size: 18px;
+        }
+    }
+    &__btn{
+        @include media(1200){
+            font-size: 18px;
+            max-width: 350px;
+            width: 100%;
+            height: 80px;
+        }
     }
     &__img{
         max-width: 40%;
         width: 100%;
         margin-left: 15px;
+        @include media(992){
+            margin-left: 0;
+            margin-top: 50px;
+            max-width: 100%;
+        }
     }
 }
