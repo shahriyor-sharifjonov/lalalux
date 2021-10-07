@@ -1,6 +1,9 @@
 .intro{
     margin-top: 20px;
     margin-bottom: 50px;
+    &__body{
+        // overflow: hidden;
+    }
     &__item{
         display: flex;
         align-items: center;
@@ -18,5 +21,9 @@
         line-height: 120%;
         color: #838387;
         margin-bottom: 50px;    
+    }
+    &__img{
+        max-width: 50%;
+        width: 100%;
     }
 }
