@@ -6,3 +6,13 @@ var swiper = new Swiper(".hot__carousel", {
       clickable: true,
     },
   });
+
+var swiper = new Swiper(".about__slider", {
+    slidesPerView: 4,
+    spaceBetween: 40,
+    autoHeight: true,
+    navigation: {
+      nextEl: ".about-button-next",
+      prevEl: ".about-button-prev",
+    },
+  });
