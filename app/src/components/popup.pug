@@ -1,0 +1,33 @@
+mixin popup-tel()
+    .popup.popup-tel 
+        .popup__body 
+            p.popup__title Закажите звонок
+            p.popup__p Мы ответим Вам в течение 30 минут
+            form(action="").popup__form.row
+                .popup__item
+                    label(for="").popup__label Ваше имя      
+                    input(type="text" placeholder="Владимир").popup__input 
+                .popup__item           
+                    label(for="").popup__label Номер телефона           
+                    input(type="tel" placeholder="+7 925 428 8288").popup__input       
+                button(type="submit").popup__btn Заказать
+
+
+
+
+
+mixin popup-login()
+    .popup.popup-login 
+        .popup__body 
+            p.popup__title Войти
+            form(action="").popup__form
+                .popup__item
+                    label(for="").popup__label Номер телефона
+                    input(type="text" placeholder="7+ 925 428 8288").popup__input 
+                .popup__item
+                    label(for="").popup__label Ваш пароль
+                    input(type="text").popup__input 
+                button(type="submit").popup__btn Войти
+                a(href="#!").popup__link Зарегистрироваться 
+
+

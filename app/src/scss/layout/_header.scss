@@ -48,6 +48,8 @@
         &-item {
             display: flex;
             align-items: center;
+            background: none;
+            border: none;
 
             img {
                 width: 35px;
@@ -321,6 +323,8 @@
         text-align: right;
         color: #838387;
         position: relative;
+        border: none;
+        background: none;
 
         @include media(1200){
             font-size: 18px;

@@ -80,3 +80,19 @@ window.onclick = (e: MouseEvent) => {
   )
     menuToggle();
 };
+
+function login(){
+  const popup = document.querySelector('.popup-login');
+  popup.classList.toggle('active')
+}
+
+function tel(){
+  const popup = document.querySelector('.popup-tel');
+  popup.classList.toggle('active')
+}
+
+window.addEventListener('click', function(e :any){
+  if(e.target.classList.contains('popup')){
+    e.target.classList.remove('active')
+  }
+})
