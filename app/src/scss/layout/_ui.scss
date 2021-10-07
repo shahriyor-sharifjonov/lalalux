@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans';
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+
+    &::placeholder {
+        font-family: 'Open Sans';
+    }
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+input {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 42px;
+    color: #FFFFFF;
+    max-width: 400px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(95.06deg, #FE7265 57.13%, #FF867B 99.4%);
+    border-radius: 68px;
+}

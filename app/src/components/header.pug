@@ -1,0 +1,34 @@
+mixin header()
+    header.header 
+        .header__nav.container  
+            a(href="index.html").header__logo
+                img(src="images/logo.png" alt="lallux").header__logo-img
+            form(action="").header__search.search-form
+                input(type="text" placeholder="Поиск").search-form__input
+                button(type='submit').search-form__btn 
+                    img(src="images/search.svg" alt="search")
+            .header__tel.tel 
+                a(href="tel:+79254288288").tel__header 
+                    img(src="images/tel.svg", alt="tel").tel__header-icon
+                    p.tel__header-link  +7 925 428 8288
+                a(href="tel:+79254288288").tel__link Заказать звонок 
+            .header__row
+                a(href="#!").header__row-item
+                    img(src="images/heart.svg", alt="").header__row
+                a(href="#!").header__row-item
+                    img(src="images/cart.svg", alt="")
+                a(href="#!").header__row-item
+                    img(src="images/user.svg", alt="")
+                    p Войти
+    .header__cat.container 
+        button(type="button").header__cat-btn 
+            img(src="images/lines.svg", alt="")
+            p Каталог
+        a(href="#!").header__cat-link О компании
+        a(href="#!").header__cat-link Калькулятор
+        a(href="#!").header__cat-link Бренды
+        a(href="#!").header__cat-link Доставка
+        a(href="#!").header__cat-link Услуги
+        a(href="#!").header__cat-link Контакты
+
+    

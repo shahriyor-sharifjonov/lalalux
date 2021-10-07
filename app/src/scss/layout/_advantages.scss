@@ -1,0 +1,32 @@
+.advantages{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 140px;
+    background: #E9EFFD;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 40px;
+    &__item{
+        background: #FFFFFF;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        width: 25%;
+        &:not(:last-child){
+            margin-right: 10px;
+        }
+        &-img{
+            width: 90px;
+            height: 90px;
+            margin-bottom: 2px;
+        }
+        &-p{
+            font-size: 22px;
+            line-height: 33px;
+            color: #838387;
+        }
+    }
+}
